@@ -1,0 +1,32 @@
+[app]
+name = "OmniverseCORE"
+version = "1.0.0"
+environment = "development"
+
+[paths]
+logs_dir = "logs"
+data_dir = "data"
+models_dir = "core/ai/models"
+modules_dir = "modules"
+
+[ai]
+enabled = true
+default_model = "local-gguf-small"
+use_gpu = true
+max_context_tokens = 4096
+
+[dashboard]
+theme = "cyberpunk"
+animations = true
+realtime_metrics = true
+
+[devops]
+docker_enabled = true
+kubernetes_enabled = true
+terraform_enabled = true
+ansible_enabled = true
+
+[performance]
+enable_profiling = true
+enable_caching = true
+cache_backend = "redis"
