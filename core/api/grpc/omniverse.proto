@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package omniverse;
+
+service SystemService {
+  rpc GetSystemInfo (Empty) returns (SystemInfo);
+}
+
+message Empty {}
+
+message SystemInfo {
+  string os = 1;
+  string cpu = 2;
+  uint64 ram = 3;
+}
