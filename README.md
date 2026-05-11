@@ -1,7 +1,10 @@
-# OMNIVERSE-CORE v1.0
-Universal Tech Framework — by The MadDoG.tmdg
+###### README.md >> markdown 
+# Omniverse
+#### Core v1.0
+##### Universal Tech Framework
+###### by The MadDoG.tmdg
 
-OMNIVERSE-CORE est un écosystème technologique universel, modulaire, extensible,
+OmniverseCore est un écosystème technologique universel, modulaire, extensible,
 multi-plateformes et multi-domaines. Il combine optimisation système, IA locale,
 API universelle, DevOps complet, dashboard cyberpunk, et marketplace de modules.
 
