@@ -1,0 +1,10 @@
+type SystemInfo {
+  os: String
+  cpu: String
+  ram: Float
+}
+
+type Query {
+  systemInfo: SystemInfo
+  aiStatus: String
+}
