@@ -1,0 +1,66 @@
+name: "🐞 Bug Report"
+description: "Signaler un bug dans OmniverseCORE"
+title: "[BUG] "
+labels: ["bug", "triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🐞 Bug Report
+        Merci de remplir toutes les sections pour faciliter l’analyse.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "🔍 Description du bug"
+      description: "Explique clairement ce qui ne fonctionne pas."
+      placeholder: "Exemple : Le module X plante lors de..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: "🔁 Étapes pour reproduire"
+      description: "Liste les étapes exactes pour reproduire le bug."
+      placeholder: |
+        1.  
+        2.  
+        3.  
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: "🧪 Comportement attendu"
+      placeholder: "Exemple : Le module devrait..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: "📎 Logs / Captures"
+      description: "Ajoute des logs, erreurs, captures d’écran."
+      render: shell
+
+  - type: input
+    id: environment
+    attributes:
+      label: "🖥️ Environnement"
+      placeholder: "OS, version, runtime, module concerné"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: "✔️ Checklist"
+      options:
+        - label: "J’ai vérifié que le bug n’existe pas déjà"
+        - label: "J’ai fourni une description claire"
+        - label: "J’ai fourni les étapes pour reproduire"
+        - label: "J’ai ajouté les informations système"
