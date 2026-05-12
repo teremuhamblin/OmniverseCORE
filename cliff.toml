@@ -1,0 +1,91 @@
+# ============================================
+# OmniverseCORE — Git-Cliff Configuration v3
+# ============================================
+
+[git]
+# Inclure tous les commits
+tag_pattern = "v*"
+commit_preprocessors = [
+  { pattern = "Merge pull request #(\\d+)", replace = "PR #$1" },
+  { pattern = "Merge branch '.*'", replace = "" }
+]
+
+# ============================================
+# GROUPES DE COMMITS
+# ============================================
+
+[git.commit_parsers]
+
+# Nouveautés
+"feat" = { group = "🚀 Nouveautés" }
+
+# Améliorations
+"perf" = { group = "⚡ Performance" }
+"refactor" = { group = "🧹 Refactorisation" }
+"style" = { group = "🎨 Style & Format" }
+"improve" = { group = "🔧 Améliorations" }
+
+# Corrections
+"fix" = { group = "🐛 Corrections" }
+"hotfix" = { group = "🔥 Hotfix" }
+
+# Documentation
+"docs" = { group = "📘 Documentation" }
+
+# Tests
+"test" = { group = "🧪 Tests" }
+
+# CI/CD
+"ci" = { group = "🤖 CI/CD" }
+"build" = { group = "🏗️ Build" }
+
+# Changement interne
+"chore" = { group = "🔩 Maintenance" }
+
+# Par défaut
+".*" = { group = "🔍 Autres" }
+
+# ============================================
+# TEMPLATE DU CHANGELOG
+# ============================================
+
+[changelog]
+header = """
+# 📜 CHANGELOG — OmniverseCORE
+"""
+
+body = """
+## {{ version | trim }} — {{ timestamp | date(format="%Y-%m-%d") }}
+
+{% if groups %}
+{% for group, commits in groups %}
+### {{ group }}
+{% for commit in commits %}
+- {{ commit.message | trim }} ({{ commit.id | truncate(length=7) }})
+{% endfor %}
+{% endfor %}
+{% else %}
+_Aucun changement enregistré._
+{% endif %}
+"""
+
+footer = """
+---
+
+_Généré automatiquement par Git-Cliff pour OmniverseCORE._
+"""
+
+# ============================================
+# VERSIONING
+# ============================================
+
+[bump]
+initial_tag = "v1.0.0"
+tag_prefix = "v"
+
+# ============================================
+# SORTIE
+# ============================================
+
+[output]
+path = "CHANGELOG.md"
