@@ -1,0 +1,71 @@
+name: "🔐 Security Issue"
+description: "Signaler une vulnérabilité ou un problème de sécurité"
+title: "[SECURITY] "
+labels: ["security", "critical"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🔐 Security Issue
+        Merci de décrire la vulnérabilité avec précision.
+
+  - type: textarea
+    id: vulnerability
+    attributes:
+      label: "⚠️ Description de la vulnérabilité"
+      placeholder: "Exemple : Escalade de privilèges via..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: "🔁 Étapes pour reproduire"
+      placeholder: |
+        1.  
+        2.  
+        3.  
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: impact
+    attributes:
+      label: "🧪 Impact potentiel"
+      options:
+        - label: "Corruption de données"
+        - label: "Escalade de privilèges"
+        - label: "Exécution non autorisée"
+        - label: "Fuite d’informations"
+        - label: "Instabilité du système"
+
+  - type: checkboxes
+    id: modules
+    attributes:
+      label: "🛡️ Modules affectés"
+      options:
+        - label: "Core"
+        - label: "Omniversal Engine"
+        - label: "I/O Layer"
+        - label: "Security Layer"
+        - label: "Autre"
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: "📎 Preuves / Logs"
+      description: "Ajoute logs, captures, payloads."
+      render: shell
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: "✔️ Checklist"
+      options:
+        - label: "Le problème n’a pas déjà été signalé"
+        - label: "Description claire"
+        - label: "Étapes pour reproduire fournies"
+        - label: "Impact évalué"
+        - label: "Informations sensibles masquées"
