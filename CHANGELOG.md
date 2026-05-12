@@ -1,4 +1,5 @@
-# 📜 CHANGELOG — OmniverseCORE
+# 📜 CHANGELOG
+>OmniverseCORE
 
 ---
 
