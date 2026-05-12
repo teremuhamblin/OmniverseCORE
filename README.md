@@ -169,15 +169,8 @@ Templates disponibles dans :
 ---
 
 <p align="center">
-  <img src="assets/logo.svg" width="48">
-  <br>
-  <strong>OmniverseCORE — The Universal Tech Framework</strong>
-</p>
-`
 
----
-
-🎯 Ton README.md est maintenant :
+🎯 Résultats
 ```md
 - Ultra pro  
 - Marketplace‑ready  
@@ -189,6 +182,7 @@ Templates disponibles dans :
 - Avec installation + quickstart  
 - Avec identité OmniverseCORE
 ```
+<p/>
 
 ---
 
