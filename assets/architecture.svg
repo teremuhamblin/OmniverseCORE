@@ -1,0 +1,21 @@
+<svg width="900" height="600" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="600" fill="#0A0F1F"/>
+
+  <text x="50%" y="60" fill="#00D4FF" font-size="32" font-family="monospace" text-anchor="middle">
+    OmniverseCORE — Architecture
+  </text>
+
+  <g font-family="monospace" font-size="22" text-anchor="middle">
+    <rect x="150" y="120" width="600" height="80" fill="none" stroke="#00D4FF" stroke-width="3"/>
+    <text x="450" y="170" fill="#00D4FF">Core Logic Layer</text>
+
+    <rect x="150" y="240" width="600" height="80" fill="none" stroke="#007BFF" stroke-width="3"/>
+    <text x="450" y="290" fill="#007BFF">Engine Layer</text>
+
+    <rect x="150" y="360" width="600" height="80" fill="none" stroke="#00D4FF" stroke-width="3"/>
+    <text x="450" y="410" fill="#00D4FF">I/O & Security Layer</text>
+
+    <rect x="150" y="480" width="600" height="80" fill="none" stroke="#007BFF" stroke-width="3"/>
+    <text x="450" y="530" fill="#007BFF">Expansion Layer</text>
+  </g>
+</svg>
