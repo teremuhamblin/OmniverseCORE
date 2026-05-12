@@ -1,0 +1,6 @@
+{
+  "core": ["system", "engine"],
+  "omniversal-engine": ["system"],
+  "io-layer": ["system", "engine"],
+  "world-engine": ["system", "engine", "module"]
+}
