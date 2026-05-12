@@ -1,0 +1,10 @@
+{
+  "max_entities": 100000,
+  "max_worlds": 256,
+  "max_timeline_events": 10000,
+  "forbidden_states": [
+    "infinite_loop",
+    "undefined_behavior",
+    "temporal_collapse"
+  ]
+}
