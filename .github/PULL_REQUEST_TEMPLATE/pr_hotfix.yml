@@ -1,0 +1,48 @@
+name: "🔥 Hotfix PR"
+description: "Corriger un problème critique"
+title: "[HOTFIX] "
+labels: ["hotfix", "critical"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🔥 Hotfix Pull Request
+        Utilisée pour les corrections urgentes et critiques.
+
+  - type: textarea
+    id: issue
+    attributes:
+      label: "⚠️ Problème corrigé"
+      placeholder: "Décris le problème critique."
+    validations:
+      required: true
+
+  - type: textarea
+    id: fix
+    attributes:
+      label: "🔧 Correction apportée"
+      placeholder: "Décris précisément la correction."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: risk
+    attributes:
+      label: "🧪 Risques potentiels"
+      options:
+        - label: "Impact sur la performance"
+        - label: "Impact sur la sécurité"
+        - label: "Impact sur la stabilité"
+        - label: "Aucun risque identifié"
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: "✔️ Checklist"
+      options:
+        - label: "Correction testée"
+        - label: "Aucune régression connue"
+        - label: "Documentation mise à jour si nécessaire"
+        - label: "Tests ajoutés ou mis à jour"
