@@ -1,0 +1,16 @@
+{
+  "invariants": {
+    "speed_of_causality": 1,
+    "entropy_direction": "forward",
+    "energy_conservation": true
+  },
+  "dimensions": {
+    "spatial": 3,
+    "temporal": 1,
+    "virtual_layers": 12
+  },
+  "forces": {
+    "stability": 0.98,
+    "chaos": 0.02
+  }
+}
