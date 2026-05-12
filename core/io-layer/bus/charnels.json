@@ -1,0 +1,5 @@
+{
+  "system": ["boot", "shutdown", "error"],
+  "engine": ["tick", "sync", "update"],
+  "entities": ["spawn", "despawn", "modify"]
+}
