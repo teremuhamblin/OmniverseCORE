@@ -1,0 +1,13 @@
+{
+  "causality": "strict",
+  "paradox_handling": "auto-resolve",
+  "branching": {
+    "enabled": true,
+    "max_depth": 12
+  },
+  "consistency_rules": [
+    "no-duplicate-entity-id",
+    "no-negative-time",
+    "state-must-be-serializable"
+  ]
+}
