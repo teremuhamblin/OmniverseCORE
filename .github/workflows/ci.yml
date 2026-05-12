@@ -1,4 +1,4 @@
-name: "OmniverseCORE — CI/CD Next-Gen"
+name: "OmniverseCORE — ci Next-Gen"
 
 on:
   push:
