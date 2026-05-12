@@ -1,0 +1,17 @@
+{
+  "name": "OmniverseCORE Dashboard",
+  "version": "3.0",
+  "api": {
+    "url": "http://localhost:8000",
+    "endpoints": {
+      "stats": "/api/stats",
+      "modules": "/api/modules",
+      "ai": "/api/ai"
+    }
+  },
+  "theme": {
+    "primary": "#00D4FF",
+    "background": "#0A0F1F",
+    "accent": "#007BFF"
+  }
+}
