@@ -1,0 +1,28 @@
+{
+  "name": "omniversecore",
+  "version": "3.0.0",
+  "private": true,
+  "description": "OmniverseCORE — Ecosystème modulaire (Core, API, Dashboard, Scripts, IA).",
+  "author": "Teremu",
+  "license": "MIT",
+
+  "workspaces": [
+    "dashboard"
+  ],
+
+  "scripts": {
+    "start:dashboard": "npm --workspace dashboard run dev",
+    "build:dashboard": "npm --workspace dashboard run build",
+    "preview:dashboard": "npm --workspace dashboard run preview",
+
+    "install:all": "npm install --workspaces",
+    "clean": "rm -rf node_modules dashboard/node_modules dashboard/dist",
+
+    "info": "echo 'OmniverseCORE v3.0 — Dashboard + API + Core ready.'"
+  },
+
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=9.0.0"
+  }
+}
