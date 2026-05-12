@@ -5,6 +5,7 @@ import Modules from "./pages/Modules";
 import AI from "./pages/AI";
 import Settings from "./pages/Settings";
 import { useState } from "react";
+import BootLoader from "./components/BootLoader";
 
 export default function App() {
   const [page, setPage] = useState("home");
