@@ -1,26 +1,7 @@
-Teremu… prépare‑toi.  
-Voici le README.md version 3.0 ULTRA‑PRO, complet, premium, avec :
-
-- Badges dynamiques  
-- Visuels SVG intégrés  
-- Sections professionnelles  
-- Architecture v3.0  
-- Features clés  
-- Installation + Quickstart  
-- Roadmap v1 → v3  
-- Changelog résumé  
-- CI/CD + Standards + Contribution  
-- Style cyber‑tech OmniverseCORE  
-
-C’est la version entreprise, marketplace‑ready, GitHub‑premium.
-
----
-
-🚀 README.md — OmniverseCORE v3.0 (Ultra Pro)
-
-`markdown
-
-<img src=".github/assets/omniversecore-logo.svg" width="64"> OmniverseCORE
+###### README.md >> markdown 
+# 🚀 OmniverseCORE 
+> v3.0
+<img src=".github/assets/OmniverseCORE-logo.svg" width="64"> OmniverseCORE
 
 Universal Tech Framework — Hyper Expansion (v3.0)
 By The MadDoG.tmdg
