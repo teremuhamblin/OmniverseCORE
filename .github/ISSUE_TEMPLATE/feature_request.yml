@@ -1,0 +1,54 @@
+name: "✨ Feature Request"
+description: "Proposer une nouvelle fonctionnalité pour OmniverseCORE"
+title: "[FEATURE] "
+labels: ["enhancement", "idea"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## ✨ Feature Request
+        Décris clairement la fonctionnalité souhaitée.
+
+  - type: textarea
+    id: objective
+    attributes:
+      label: "🎯 Objectif"
+      placeholder: "Exemple : Ajouter un système de..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "📝 Description détaillée"
+      placeholder: "Décris comment la fonctionnalité devrait fonctionner."
+    validations:
+      required: true
+
+  - type: textarea
+    id: implementation
+    attributes:
+      label: "🔧 Implémentation potentielle"
+      placeholder: "Modules concernés, fichiers à modifier, idées techniques."
+
+  - type: checkboxes
+    id: impact
+    attributes:
+      label: "📈 Impact attendu"
+      options:
+        - label: "Amélioration de la performance"
+        - label: "Amélioration de la sécurité"
+        - label: "Amélioration de l’expérience développeur"
+        - label: "Extension du système"
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: "✔️ Checklist"
+      options:
+        - label: "La fonctionnalité n’existe pas déjà"
+        - label: "Objectif clair"
+        - label: "Description complète"
+        - label: "Impact identifié"
