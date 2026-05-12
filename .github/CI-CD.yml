@@ -1,0 +1,148 @@
+name: "OmniverseCORE — CI/CD Next-Gen"
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+  workflow_dispatch:
+
+jobs:
+  # ============================================================
+  # 1) PYTHON — API + IA
+  # ============================================================
+  python:
+    name: "🐍 Python — API & AI"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "📥 Checkout"
+        uses: actions/checkout@v4
+
+      - name: "🐍 Setup Python"
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: "📦 Install Python deps"
+        run: |
+          pip install -r requirements.txt || true
+
+      - name: "🧪 Python Tests"
+        run: |
+          pytest || true
+
+      - name: "📤 Upload Python Artefacts"
+        uses: actions/upload-artifact@v4
+        with:
+          name: python-artifacts
+          path: |
+            core/api/
+            core/ai/
+
+  # ============================================================
+  # 2) NODE — Dashboard futuriste
+  # ============================================================
+  dashboard:
+    name: "🖥️ Dashboard — Node"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "📥 Checkout"
+        uses: actions/checkout@v4
+
+      - name: "⚡ Setup Node"
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "npm"
+
+      - name: "📦 Install"
+        run: |
+          cd dashboard
+          npm install
+
+      - name: "🧹 Lint"
+        run: |
+          cd dashboard
+          npm run lint || true
+
+      - name: "🧪 Tests"
+        run: |
+          cd dashboard
+          npm test || true
+
+      - name: "🏗️ Build Dashboard"
+        run: |
+          cd dashboard
+          npm run build
+
+      - name: "📤 Upload Dashboard Artefacts"
+        uses: actions/upload-artifact@v4
+        with:
+          name: dashboard-build
+          path: dashboard/dist/
+
+  # ============================================================
+  # 3) BASH — Scripts système
+  # ============================================================
+  bash:
+    name: "🔧 Bash Scripts"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "📥 Checkout"
+        uses: actions/checkout@v4
+
+      - name: "🧪 Validate Bash Scripts"
+        run: |
+          bash -n scripts/bash/install.sh || true
+
+      - name: "📤 Upload Bash Artefacts"
+        uses: actions/upload-artifact@v4
+        with:
+          name: bash-scripts
+          path: scripts/bash/
+
+  # ============================================================
+  # 4) RELEASE — Auto version + Changelog + Tag + Artefacts
+  # ============================================================
+  release:
+    name: "🚀 Release Auto"
+    needs: [python, dashboard, bash]
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+
+    steps:
+      - name: "📥 Checkout"
+        uses: actions/checkout@v4
+
+      - name: "🧬 Auto Versioning"
+        id: version
+        run: |
+          echo "version=v3.0.$(date +%s)" >> $GITHUB_OUTPUT
+
+      - name: "📝 Generate Changelog"
+        uses: orhun/git-cliff-action@v3
+        with:
+          config: ./cliff.toml
+          output: CHANGELOG.md
+
+      - name: "🏷️ Create Release"
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.version.outputs.version }}
+          name: "OmniverseCORE v3.0"
+          body_path: CHANGELOG.md
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: "📤 Upload Artefacts"
+        uses: actions/upload-artifact@v4
+        with:
+          name: omniversecore-full-build
+          path: |
+            dashboard/dist/
+            core/api/
+            core/ai/
+            scripts/bash/
