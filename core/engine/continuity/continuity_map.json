@@ -1,0 +1,7 @@
+{
+  "root": "state_0",
+  "branches": {
+    "alpha": ["state_1", "state_2"],
+    "beta": ["state_3"]
+  }
+}
