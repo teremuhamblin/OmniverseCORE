@@ -1,0 +1,29 @@
+<svg width="900" height="520" viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="520" fill="#0A0F1F"/>
+
+  <text x="50%" y="60" fill="#00D4FF" font-size="32" font-family="monospace" text-anchor="middle">
+    OmniverseCORE — Module Grid
+  </text>
+
+  <g fill="none" stroke="#00D4FF" stroke-width="2" opacity="0.4">
+    <rect x="50" y="100" width="800" height="360"/>
+    <line x1="50" y1="220" x2="850" y2="220"/>
+    <line x1="50" y1="340" x2="850" y2="340"/>
+    <line x1="300" y1="100" x2="300" y2="460"/>
+    <line x1="550" y1="100" x2="550" y2="460"/>
+  </g>
+
+  <g fill="#00D4FF" font-family="monospace" font-size="20">
+    <text x="175" y="170" text-anchor="middle">Bloc 1–5</text>
+    <text x="425" y="170" text-anchor="middle">Bloc 6–10</text>
+    <text x="675" y="170" text-anchor="middle">Bloc 11–15</text>
+
+    <text x="175" y="290" text-anchor="middle">Core / Logic</text>
+    <text x="425" y="290" text-anchor="middle">Engine / I/O</text>
+    <text x="675" y="290" text-anchor="middle">Expansion</text>
+
+    <text x="175" y="410" text-anchor="middle">Foundation</text>
+    <text x="425" y="410" text-anchor="middle">Next-Gen</text>
+    <text x="675" y="410" text-anchor="middle">Hyper Expansion</text>
+  </g>
+</svg>
