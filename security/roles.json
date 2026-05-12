@@ -1,0 +1,6 @@
+{
+  "system": ["read", "write", "execute", "admin"],
+  "engine": ["read", "execute"],
+  "module": ["read"],
+  "external": ["read"]
+}
