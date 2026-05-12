@@ -1,0 +1,56 @@
+name: "✨ Feature PR"
+description: "Proposer une nouvelle fonctionnalité"
+title: "[FEATURE] "
+labels: ["enhancement", "feature"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## ✨ Feature Pull Request
+        Merci de détailler la fonctionnalité ajoutée.
+
+  - type: textarea
+    id: objective
+    attributes:
+      label: "🎯 Objectif"
+      placeholder: "Exemple : Ajouter un système de..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: implementation
+    attributes:
+      label: "🔧 Implémentation"
+      placeholder: "Décris comment la fonctionnalité a été implémentée."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: impact
+    attributes:
+      label: "📈 Impact"
+      options:
+        - label: "Amélioration de la performance"
+        - label: "Amélioration de la sécurité"
+        - label: "Extension du système"
+        - label: "Amélioration de l’expérience développeur"
+
+  - type: textarea
+    id: tests
+    attributes:
+      label: "🧪 Tests"
+      placeholder: "Décris les tests effectués."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: "✔️ Checklist"
+      options:
+        - label: "Fonctionnalité testée"
+        - label: "Documentation mise à jour"
+        - label: "Aucune régression"
+        - label: "Respect des conventions"
