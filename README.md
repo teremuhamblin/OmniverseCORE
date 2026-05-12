@@ -1,13 +1,17 @@
 ###### README.md >> markdown 
-# Omniverse
-#### Core v1.0
->Universal Tech Framework
+# 🌌 OmniverseCORE 
+>Version 3.0 (simple, propre, mis à jour)
+### Core v3.0
+> Universal Tech Framework — Hyper Expansion
 - By The MadDoG.tmdg
 
-##### OmniverseCore est un écosystème technologique universel, modulaire, extensible, multi-plateformes et multi-domaines. Il combine optimisation système, IA locale, API universelle, DevOps complet, dashboard cyberpunk, et marketplace de modules.
+OmniverseCORE est un écosystème technologique universel, modulaire, extensible, multi‑plateformes et multi‑domaines.  
+La version 3.0 introduit l’expansion avancée : API externe, Dashboard interne, nouveaux blocs (11 → 15), CI/CD nouvelle génération et architecture étendue.
 
-## 🌌 Domaines couverts
-```md
+---
+
+🌌 Domaines couverts
+`md
 - Optimisation système (Linux, Windows, macOS, Android)
 - API REST / GraphQL / gRPC
 - IA locale (GGUF, ONNX, pipelines ML, agents)
@@ -15,30 +19,39 @@
 - DevOps complet (Docker, K8s, Terraform, Ansible)
 - Documentation multi-formats (MD, RST, MkDocs, OpenAPI)
 - Marketplace de modules
-```
+- API externe v1 (v3.0)
+- Dashboard interne (v3.0)
+- Blocs avancés 11 → 15 (v3.0)
+`
 
 ---
 
-### 🚀 Installation
-```bash
+🚀 Installation
+`bash
 bash scripts/bash/install.sh
-```
-##### 🧠 Lancer l’IA
-```bash
+`
+
+🧠 Lancer l’IA
+`bash
 python3 core/ai/agents/agent.py
-```
-##### 🖥️ Lancer le dashboard
-```bash
+`
+
+🖥️ Lancer le dashboard
+`bash
 cd dashboard
 npm install
 npm run dev
-```
-##### 🔌 API REST
-```bash
+`
+
+🔌 API REST
+`bash
 uvicorn core/api/rest/main:app --reload
-```
+`
 
 ---
 
-### 📦 Licence
+📦 Licence
 MIT
+`
+
+---
