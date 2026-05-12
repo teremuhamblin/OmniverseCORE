@@ -27,3 +27,20 @@ export default function App() {
     </div>
   );
 }
+export default function App() {
+  const [booted, setBooted] = useState(false);
+
+  if (!booted) {
+    return <BootLoader onFinish={() => setBooted(true)} />;
+  }
+
+  return (
+    <div className="flex h-screen">
+      <Sidebar setPage={setPage} />
+      <div className="flex flex-col flex-1">
+        <Header />
+        <div className="p-6">{pages[page]}</div>
+      </div>
+    </div>
+  );
+}
