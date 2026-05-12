@@ -1,0 +1,7 @@
+{
+  "default_behavior": "neutral",
+  "aggression_threshold": 0.12,
+  "cooperation_bias": 0.64,
+  "learning_rate": 0.03,
+  "memory_span": 128
+}
