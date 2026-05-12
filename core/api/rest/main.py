@@ -1,17 +1,28 @@
 from fastapi import FastAPI
-from routes.system import router as system_router
-from routes.ai import router as ai_router
-from routes.modules import router as modules_router
 
-app = FastAPI(
-    title="OMNIVERSE-CORE REST API",
-    version="1.0.0"
-)
+app = FastAPI(title="OmniverseCORE API", version="3.0")
 
-app.include_router(system_router, prefix="/system")
-app.include_router(ai_router, prefix="/ai")
-app.include_router(modules_router, prefix="/modules")
+@app.get("/api/stats")
+def get_stats():
+    return {
+        "cpu": "12%",
+        "ram": "43%",
+        "disk": "68%",
+        "uptime": "3h 22m"
+    }
 
-@app.get("/")
-def root():
-    return {"status": "running", "version": "1.0.0"}
+@app.get("/api/modules")
+def get_modules():
+    return [
+        {"name": "Core Engine", "status": "active"},
+        {"name": "AI Layer", "status": "active"},
+        {"name": "Security Layer", "status": "idle"}
+    ]
+
+@app.get("/api/ai")
+def get_ai():
+    return {
+        "models_loaded": ["ggml-7b", "onnx-vision"],
+        "agents": 3,
+        "status": "operational"
+    }
