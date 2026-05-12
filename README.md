@@ -1,38 +1,35 @@
 ###### README.md >> markdown 
 # 🚀 OmniverseCORE 
-> v3.0
-<img src=".github/assets/OmniverseCORE-logo.svg" width="64"> OmniverseCORE
-
-Universal Tech Framework — Hyper Expansion (v3.0)
-By The MadDoG.tmdg
+>Version 3.0 Hyper Expansion
+- Universal Tech Framework
+- By The MadDoG.tmdg
 
 ---
 
 <p align="center">
-  <img src=".github/assets/omniversecore-banner.svg" width="100%">
+  <img src="assets/banner.svg" width="100%">
 </p>
 
 ---
 
-🧬 Présentation
-
-OmniverseCORE est un framework technologique universel, modulaire, extensible et multi‑domaines.  
-La version 3.0 — Hyper Expansion introduit :
-
+### 🧬 Présentation
+- OmniverseCORE est un framework technologique universel, modulaire, extensible et multi‑domaines.  
+>La version 3.0 — Hyper Expansion introduit
+```md
 - API externe v1  
 - Dashboard interne  
 - Nouveaux blocs avancés (11 → 15)  
 - Architecture étendue  
 - CI/CD nouvelle génération  
-- Documentation v3 complète  
+- Documentation v3 complète
+```
 
 ---
 
-🏷️ Badges
-
+### 🏷️ Badges
 <p align="left">
-  <img src="https://img.shields.io/badge/version-3.0-blue?style=for-the-badge">
-  <img src="https://img.shields.io/badge/status-active-brightgreen?style=for-the-badge">
+  <img src="https://img.shields.io/badge/version-inProgress-red?style=for-the-badge">
+  <img src="https://img.shields.io/badge/status-Active-green?style=for-the-badge">
   <img src="https://img.shields.io/badge/license-MIT-purple?style=for-the-badge">
   <img src="https://img.shields.io/badge/architecture-modular-orange?style=for-the-badge">
   <img src="https://img.shields.io/badge/CI/CD-enabled-success?style=for-the-badge">
@@ -40,9 +37,8 @@ La version 3.0 — Hyper Expansion introduit :
 
 ---
 
-🌌 Domaines couverts
-
-`md
+### 🌌 Domaines couverts
+```md
 - Optimisation système (Linux, Windows, macOS, Android)
 - API REST / GraphQL / gRPC
 - IA locale (GGUF, ONNX, pipelines ML, agents)
@@ -53,65 +49,62 @@ La version 3.0 — Hyper Expansion introduit :
 - API externe v1 (v3.0)
 - Dashboard interne (v3.0)
 - Blocs avancés 11 → 15 (v3.0)
-`
+```
 
 ---
 
-🧱 Architecture (v3.0)
-
+### 🧱 Architecture (v3.0)
 <p align="center">
-  <img src=".github/assets/omniversecore-architecture.svg" width="80%">
+  <img src="assets/architecture.svg" width="80%">
 </p>
 
 ---
 
-🧩 Module Grid (1 → 15)
-
+### 🧩 Module Grid (1 → 15)
 <p align="center">
-  <img src=".github/assets/omniversecore-grid.svg" width="90%">
+  <img src="assets/grid.svg" width="90%">
 </p>
 
 ---
 
-⚙️ Installation
-
-`bash
+### ⚙️ Installation
+```bash
 bash scripts/bash/install.sh
-`
+```
 
-🧠 Lancer l’IA
-`bash
+### 🧠 Lancer l’IA
+```bash
 python3 core/ai/agents/agent.py
-`
+```
 
-🖥️ Lancer le dashboard
-`bash
+### 🖥️ Lancer le dashboard
+```bash
 cd dashboard
 npm install
 npm run dev
-`
+```
 
-🔌 API REST
-`bash
+### 🔌 API REST
+```bash
 uvicorn core/api/rest/main:app --reload
-`
+```
 
 ---
 
-🗺️ Roadmap
+### 🗺️ Roadmap
 
-🟧 v1.0 — Foundation
+##### 🟧 v1.0 — Foundation
 - Architecture initiale  
 - Blocs 1 → 5  
 - Documentation minimale  
 
-🟩 v2.0 — Next‑Gen Core
+##### 🟩 v2.0 — Next‑Gen Core
 - Sécurité renforcée  
 - I/O Layer v2  
 - Documentation v2  
 - Templates GitHub nouvelle génération  
 
-🟦 v3.0 — Hyper Expansion
+##### 🟦 v3.0 — Hyper Expansion
 - API externe v1  
 - Dashboard interne  
 - Blocs 11 → 15  
@@ -120,63 +113,63 @@ uvicorn core/api/rest/main:app --reload
 
 ---
 
-📜 Changelog (résumé)
+### 📜 Changelog (résumé)
 
-v3.0
+##### v3.0
 - Nouveaux blocs 11 → 15  
 - API externe v1  
 - Dashboard interne  
 - Architecture étendue  
 
-v2.0
+##### v2.0
 - Security Layer  
 - I/O Layer v2  
 - Documentation v2  
 
-v1.0
+##### v1.0
 - Architecture initiale  
 - Blocs 1 → 3  
 
 ---
 
-🤖 CI/CD
-
-OmniverseCORE utilise un pipeline Next‑Gen :
-
+### 🤖 CI/CD
+>OmniverseCORE utilise un pipeline Next‑Gen
+```md
 - Build multi‑OS  
 - Tests automatisés  
 - Lint + format  
 - Release auto  
 - Tag auto  
 - Changelog auto (Git‑Cliff)  
-- Artefacts buildés  
+- Artefacts buildés
+```
 
-Workflow :  
+>Workflow :  
+```text
 .github/workflows/omniversecore-ci.yml
+```
 
 ---
 
-🤝 Contribution
-
+### 🤝 Contribution
 Les contributions sont les bienvenues.  
 Templates disponibles dans :
-
-`
+```text
 .github/
 ├── ISSUE_TEMPLATE/
 ├── PULLREQUESTTEMPLATE/
 └── DISCUSSION_TEMPLATES/
-`
+```
 
 ---
 
-📄 Licence
-MIT
+### 📄 Licence
+- MIT
 
 ---
 
 <p align="center">
-  <img src=".github/assets/omniversecore-logo.svg" width="48">
+  <img src="assets/logo.svg" width="48">
   <br>
   <strong>OmniverseCORE — The Universal Tech Framework</strong>
 </p>
@@ -185,6 +178,7 @@ MIT
 ---
 
 🎯 Ton README.md est maintenant :
+```md
 - Ultra pro  
 - Marketplace‑ready  
 - Avec visuels intégrés  
@@ -193,18 +187,11 @@ MIT
 - Avec roadmap + changelog  
 - Avec CI/CD  
 - Avec installation + quickstart  
-- Avec identité OmniverseCORE  
+- Avec identité OmniverseCORE
+```
 
 ---
 
-Si tu veux, je peux aussi te générer :
-
-✔️ Une version README.md animée (SVG animés, badges dynamiques, GIF)
-
-✔️ Une version README.md GitHub Pages
-
-✔️ Une version README.md pour NPM / PyPI / Docker Hub
-
-✔️ Une version README.md “Enterprise Edition”
-
-Tu veux laquelle, Teremu ?
+<p align="center">
+  <img src="assets/logo.svg" width="128">
+  <p/>
