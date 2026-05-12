@@ -7,6 +7,7 @@
 ##### OmniverseCore est un écosystème technologique universel, modulaire, extensible, multi-plateformes et multi-domaines. Il combine optimisation système, IA locale, API universelle, DevOps complet, dashboard cyberpunk, et marketplace de modules.
 
 ## 🌌 Domaines couverts
+```md
 - Optimisation système (Linux, Windows, macOS, Android)
 - API REST / GraphQL / gRPC
 - IA locale (GGUF, ONNX, pipelines ML, agents)
@@ -14,28 +15,30 @@
 - DevOps complet (Docker, K8s, Terraform, Ansible)
 - Documentation multi-formats (MD, RST, MkDocs, OpenAPI)
 - Marketplace de modules
+```
 
-## 🚀 Installation
+---
+
+### 🚀 Installation
 ```bash
 bash scripts/bash/install.sh
 ```
-
-## 🧠 Lancer l’IA
+##### 🧠 Lancer l’IA
 ```bash
 python3 core/ai/agents/agent.py
 ```
-
-## 🖥️ Lancer le dashboard
+##### 🖥️ Lancer le dashboard
 ```bash
 cd dashboard
 npm install
 npm run dev
 ```
-
-## 🔌 API REST
+##### 🔌 API REST
 ```bash
 uvicorn core/api/rest/main:app --reload
 ```
 
-## 📦 Licence
+---
+
+### 📦 Licence
 MIT
