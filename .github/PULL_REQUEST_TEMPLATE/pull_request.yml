@@ -1,0 +1,71 @@
+name: "🚀 Pull Request"
+description: "Créer une Pull Request pour OmniverseCORE"
+title: "[PR] "
+labels: ["pr", "review-needed"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🚀 Pull Request — OmniverseCORE
+        Merci de remplir toutes les sections pour une revue efficace.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: "📝 Résumé"
+      description: "Décris brièvement ce que cette PR apporte."
+      placeholder: "Exemple : Ajout du Bloc 9, amélioration du moteur..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: changes
+    attributes:
+      label: "🔧 Changements"
+      description: "Liste les modifications principales."
+      placeholder: |
+        - Ajout de...
+        - Modification de...
+        - Suppression de...
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: type
+    attributes:
+      label: "📦 Type de PR"
+      options:
+        - label: "Nouvelle fonctionnalité"
+        - label: "Correction de bug"
+        - label: "Refactorisation"
+        - label: "Documentation"
+        - label: "Optimisation"
+        - label: "Sécurité"
+
+  - type: textarea
+    id: tests
+    attributes:
+      label: "🧪 Tests"
+      description: "Décris les tests effectués."
+      placeholder: "Exemple : Tests unitaires sur..."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: "✔️ Checklist"
+      options:
+        - label: "Le code compile"
+        - label: "Les tests passent"
+        - label: "La documentation est mise à jour"
+        - label: "Aucune régression connue"
+        - label: "Respect des conventions du projet"
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: "📎 Notes supplémentaires"
+      description: "Informations utiles pour les reviewers."
