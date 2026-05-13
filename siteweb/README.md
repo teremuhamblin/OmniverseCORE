@@ -4,7 +4,8 @@
 - Site vitrine + hub de documentation pour le projet **OmniverseCORE**.
 
 ### Structure
->OmniverseCORE : structure de dossiers, mini-router, layout commun, et un point d’entrée unique.
+>OmniverseCORE :
+- structure de dossiers, mini-router, layout commun, et un point d’entrée unique.
 
 ```md- `public/` : point d’entrée (`index.php`), assets, `.htaccess`
 - `app/` : config, routes, contrôleurs, vues
@@ -45,3 +46,5 @@ OmniverseCORE-site/
 ```bash
 php -S localhost:8000 -t public
 ```
+- puis ouvrir ouvrir https://localhost:8000
+
