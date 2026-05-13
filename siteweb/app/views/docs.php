@@ -1,9 +1,12 @@
 <section class="docs">
-    <h1>Documentation</h1>
+    <h1 class="title">Documentation OmniverseCORE</h1>
 
-    <ul>
+    <div class="doc-grid">
         <?php foreach ($sections as $section): ?>
-            <li><?= $section ?></li>
+            <article class="doc-card">
+                <h2><?= htmlspecialchars($section, ENT_QUOTES) ?></h2>
+                <p>Consultez les détails de la section « <?= htmlspecialchars($section, ENT_QUOTES) ?> ».</p>
+            </article>
         <?php endforeach; ?>
-    </ul>
+    </div>
 </section>
