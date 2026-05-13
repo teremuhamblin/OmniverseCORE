@@ -1,12 +1,22 @@
 <?php
-declare(strict_types=1);
 
-class DocsController
+namespace App\Controllers;
+
+use App\Core\Controller;
+
+class DocsController extends Controller
 {
-    public function index(): string
+    public function index(): void
     {
-        return view('docs', [
-            'title' => 'Documentation OmniverseCORE',
+        $this->view('docs', [
+            'title'    => 'Documentation — OmniverseCORE',
+            'sections' => [
+                'Installation',
+                'Architecture',
+                'API',
+                'Plugins',
+                'Roadmap'
+            ]
         ]);
     }
 }
