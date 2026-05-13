@@ -1,18 +1,13 @@
 <?php
+
 declare(strict_types=1);
 
-define('OMNI_APP_NAME', 'OmniverseCORE');
-define('OMNI_BASE_URL', '/'); // adapte si le site est dans un sous-dossier
+define('APP_NAME', 'OmniverseCORE');
+define('APP_ENV', 'development');
+define('APP_DEBUG', true);
+define('APP_BASE_PATH', dirname(__DIR__));
 
-function view(string $template, array $data = []): string
-{
-    $viewFile = __DIR__ . '/views/' . $template . '.php';
-    if (!file_exists($viewFile)) {
-        return 'View not found: ' . htmlspecialchars($template);
-    }
+ini_set('display_errors', APP_DEBUG ? '1' : '0');
+error_reporting(E_ALL);
 
-    extract($data);
-    ob_start();
-    include __DIR__ . '/views/layout.php';
-    return ob_get_clean();
-}
+require_once __DIR__ . '/core/Helpers.php';
