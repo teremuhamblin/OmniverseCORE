@@ -1,21 +1,42 @@
 <?php
 
-class Router {
+namespace App\Core;
+
+class Router
+{
     private array $routes = [];
 
-    public function get(string $path, callable $callback) {
-        $this->routes['GET'][$path] = $callback;
+    public function get(string $path, callable|array $handler): void
+    {
+        $this->routes['GET'][$path] = $handler;
     }
 
-    public function dispatch() {
-        $method = $_SERVER['REQUEST_METHOD'];
-        $uri = strtok($_SERVER['REQUEST_URI'], '?');
+    public function post(string $path, callable|array $handler): void
+    {
+        $this->routes['POST'][$path] = $handler;
+    }
 
-        if (isset($this->routes[$method][$uri])) {
-            return call_user_func($this->routes[$method][$uri]);
+    public function dispatch(): void
+    {
+        $method = $_SERVER['REQUEST_METHOD'] ?? 'GET';
+        $uri = strtok($_SERVER['REQUEST_URI'] ?? '/', '?');
+
+        $handler = $this->routes[$method][$uri] ?? null;
+
+        if (!$handler) {
+            Response::html('404 — Page non trouvée', 404);
+            return;
         }
 
-        http_response_code(404);
-        echo "404 — Page not found";
+        if (is_array($handler)) {
+            [$controller, $action] = $handler;
+            if (is_string($controller)) {
+                $controller = new $controller();
+            }
+            $controller->$action();
+            return;
+        }
+
+        $handler();
     }
 }
