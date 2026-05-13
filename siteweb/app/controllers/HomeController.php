@@ -1,21 +1,16 @@
 <?php
-declare(strict_types=1);
 
-class HomeController
+namespace App\Controllers;
+
+use App\Core\Controller;
+
+class HomeController extends Controller
 {
-    public function index(): string
+    public function index(): void
     {
-        return view('home', [
-            'title' => 'OmniverseCORE',
-            'subtitle' => 'Core engine, modules & omniversal tooling',
-        ]);
-    }
-
-    public function about(): string
-    {
-        return view('home', [
-            'title' => 'À propos d’OmniverseCORE',
-            'subtitle' => 'Vision, architecture et roadmap',
+        $this->view('home', [
+            'title'   => 'Accueil — OmniverseCORE',
+            'message' => 'Bienvenue dans l’univers OmniverseCORE'
         ]);
     }
 }
