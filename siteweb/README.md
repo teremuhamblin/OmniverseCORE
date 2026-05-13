@@ -20,22 +20,24 @@ OmniverseCORE-site/
 │  ├─ .htaccess
 │  ├─ assets/
 │  │  ├─ css/
-│  │  │  └─ main.css
 │  │  ├─ js/
-│  │  │  └─ app.js
 │  │  └─ img/
+│  └─ uploads/          ← sécurisé + .htaccess
 ├─ app/
 │  ├─ config.php
 │  ├─ routes.php
 │  ├─ controllers/
-│  │  ├─ HomeController.php
-│  │  └─ DocsController.php
-│  ├─ views/
-│  │  ├─ layout.php
-│  │  ├─ home.php
-│  │  └─ docs.php
-├─ vendor/        (si tu ajoutes Composer plus tard)
+│  ├─ models/           ← NOUVEAU (future DB)
+│  ├─ services/         ← NOUVEAU (API, logique)
+│  ├─ core/             ← NOUVEAU (Router, View, Helpers)
+│  └─ views/
+├─ storage/             ← logs, cache, sessions
+│  ├─ logs/
+│  ├─ cache/
+│  └─ sessions/
+├─ vendor/
 ├─ .gitignore
+├─ composer.json        ← NOUVEAU (autoload PSR-4)
 └─ README.md
 ```
 
