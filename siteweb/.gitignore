@@ -1,0 +1,236 @@
+# =========================
+# OS / système
+# =========================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.nfs*
+
+# =========================
+# Logs / runtime / cache
+# =========================
+logs/
+*.log
+*.log.*
+*.out
+*.err
+*.pid
+
+tmp/
+temp/
+cache/
+cache/*
+!cache/.gitkeep
+sessions/
+session/
+uploads/tmp/
+uploads/cache/
+
+# =========================
+# Environnements / secrets
+# =========================
+.env
+.env.*
+!.env.example
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Clés / certificats
+*.key
+*.pem
+*.crt
+*.pfx
+
+# =========================
+# PHP / frameworks
+# =========================
+# Dépendances Composer
+/vendor/
+composer.lock
+composer.phar
+
+# Cache d’OPcache (si monté dans le projet)
+opcache/
+php_cache/
+
+# Symfony (si utilisé)
+var/
+var/*
+!var/.gitkeep
+var/cache/
+var/log/
+var/sessions/
+
+# Laravel (si utilisé)
+bootstrap/cache/
+storage/
+storage/*
+!storage/.gitignore
+!storage/app/.gitignore
+!storage/framework/.gitignore
+!storage/logs/.gitignore
+
+# CodeIgniter (si utilisé)
+writable/
+application/cache/
+application/logs/
+
+# =========================
+# Node / JS / front
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
+
+# Build / bundles
+dist/
+build/
+public/build/
+public/js/build/
+public/css/build/
+assets/build/
+webpack-stats.json
+
+# Outils front
+.browserslistrc
+.stylelintcache
+.eslintcache
+
+# =========================
+# CSS / préprocesseurs
+# =========================
+*.css.map
+*.scssc
+*.sassc
+*.lessc
+
+# Dossiers de build CSS
+css/dist/
+css/build/
+public/css/dist/
+public/css/*.min.css.map
+
+# =========================
+# JS / TypeScript
+# =========================
+*.js.map
+*.min.js.map
+*.tsbuildinfo
+
+# Dossiers de build JS
+js/dist/
+js/build/
+public/js/dist/
+
+# =========================
+# Config locales / IDE
+# =========================
+# PHPStorm / IntelliJ
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+.history/
+
+# Eclipse / NetBeans
+.project
+.buildpath
+.settings/
+nbproject/
+
+# Autres
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# =========================
+# Outils / CI / divers
+# =========================
+# Docker
+docker-compose.override.yml
+.docker/
+docker/
+.dockerignore
+
+# Vagrant
+.vagrant/
+
+# PHPUnit / tests
+phpunit.xml
+phpunit.xml.dist
+coverage/
+.clover
+.phpunit.result.cache
+
+# PHPCS / PHPStan / Psalm
+.php_cs.cache
+.php-cs-fixer.cache
+.phpstan/cache
+psalm-cache/
+
+# =========================
+# Fichiers spécifiques projet
+# =========================
+# Config locales
+config/local.php
+config/local/*.php
+config/dev.php
+config/test.php
+
+# Uploads utilisateurs (garder seulement un .gitkeep)
+uploads/
+uploads/*
+!uploads/.gitkeep
+
+# Sauvegardes / exports
+backup/
+backups/
+*.sql
+*.sql.gz
+*.tar
+*.tar.gz
+*.zip
+
+# =========================
+# CMS possibles (si utilisés)
+# =========================
+# WordPress
+wp-content/cache/
+wp-content/uploads/
+wp-content/upgrade/
+wp-content/backups/
+wp-content/advanced-cache.php
+wp-content/object-cache.php
+wp-config.php
+wp-config-local.php
+
+# Drupal
+sites/*/files/
+sites/*/private/
+sites/*/settings.local.php
+
+# Joomla
+cache/
+administrator/cache/
+tmp/
+logs/
+configuration.php
+configuration.php-dist
