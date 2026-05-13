@@ -35,24 +35,59 @@ OmniverseCORE-site/
 │  ├─ .htaccess
 │  ├─ assets/
 │  │  ├─ css/
+│  │  │  ├─ main.css
+│  │  │  ├─ theme-dark.css
+│  │  │  └─ theme-light.css
 │  │  ├─ js/
+│  │  │  ├─ app.js
+│  │  │  ├─ particles.js
+│  │  │  └─ ui.js
 │  │  └─ img/
-│  └─ uploads/          ← sécurisé + .htaccess
+│  └─ uploads/
+│     └─ .htaccess
+│
 ├─ app/
 │  ├─ config.php
 │  ├─ routes.php
+│  ├─ core/
+│  │  ├─ Router.php
+│  │  ├─ Controller.php
+│  │  ├─ View.php
+│  │  ├─ Response.php
+│  │  └─ Helpers.php
 │  ├─ controllers/
-│  ├─ models/           ← NOUVEAU (future DB)
-│  ├─ services/         ← NOUVEAU (API, logique)
-│  ├─ core/             ← NOUVEAU (Router, View, Helpers)
+│  │  ├─ HomeController.php
+│  │  ├─ DocsController.php
+│  │  └─ ApiController.php
+│  ├─ models/
+│  │  └─ ExampleModel.php
+│  ├─ services/
+│  │  └─ SystemService.php
 │  └─ views/
-├─ storage/             ← logs, cache, sessions
+│     ├─ layout.php
+│     ├─ home.php
+│     ├─ docs.php
+│     └─ partials/
+│        └─ loader.php
+│
+├─ api/
+│  ├─ index.php
+│  └─ routes.php
+│
+├─ plugins/
+│  ├─ README.md
+│  └─ example-plugin/
+│     ├─ plugin.php
+│     └─ config.json
+│
+├─ storage/
 │  ├─ logs/
 │  ├─ cache/
 │  └─ sessions/
+│
 ├─ vendor/
+├─ composer.json
 ├─ .gitignore
-├─ composer.json        ← NOUVEAU (autoload PSR-4)
 └─ README.md
 ```
 
