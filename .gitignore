@@ -1,8 +1,276 @@
-__pycache__/
-node_modules/
+###############################################
+# =============== OS / SYSTEME ===============
+###############################################
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.nfs*
+
+###############################################
+# =============== LOGS / CACHE ===============
+###############################################
+
+# Logs généraux
+logs/
+*.log
+*.log.*
+*.out
+*.err
+*.pid
+
+# Temp / cache
+tmp/
+temp/
+cache/
+cache/*
+!cache/.gitkeep
+
+# Sessions
+sessions/
+session/
+
+# Uploads temporaires
+uploads/tmp/
+uploads/cache/
+
+###############################################
+# ============ ENVIRONNEMENTS / SECRETS ======
+###############################################
+
 .env
+.env.*
+!.env.example
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Certificats / clés
+*.key
+*.pem
+*.crt
+*.pfx
+
+###############################################
+# ================ PHP / FRAMEWORKS ==========
+###############################################
+
+# Composer
+/vendor/
+composer.lock
+composer.phar
+
+# OPcache
+opcache/
+php_cache/
+
+# Symfony
+var/
+var/*
+!var/.gitkeep
+var/cache/
+var/log/
+var/sessions/
+
+# Laravel
+bootstrap/cache/
+storage/
+storage/*
+!storage/.gitignore
+!storage/app/.gitignore
+!storage/framework/.gitignore
+!storage/logs/.gitignore
+
+# CodeIgniter
+writable/
+application/cache/
+application/logs/
+
+###############################################
+# ================ NODE / JS / FRONT =========
+###############################################
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
+
+# Build
 dist/
 build/
-.vscode/
+public/build/
+public/js/build/
+public/css/build/
+assets/build/
+webpack-stats.json
+
+# Outils front
+.browserslistrc
+.stylelintcache
+.eslintcache
+
+###############################################
+# ================ CSS / PREPROCESSORS =======
+###############################################
+
+*.css.map
+*.scssc
+*.sassc
+*.lessc
+
+css/dist/
+css/build/
+public/css/dist/
+public/css/*.min.css.map
+
+###############################################
+# ================ JS / TYPESCRIPT ===========
+###############################################
+
+*.js.map
+*.min.js.map
+*.tsbuildinfo
+
+js/dist/
+js/build/
+public/js/dist/
+
+###############################################
+# ================ IDE / CONFIG LOCALES ======
+###############################################
+
+# PHPStorm / IntelliJ
 .idea/
-*.log
+*.iml
+
+# VS Code
+.vscode/
+.history/
+
+# Eclipse / NetBeans
+.project
+.buildpath
+.settings/
+nbproject/
+
+# Autres
+*.swp
+*.swo
+*.bak
+*.tmp
+
+###############################################
+# ================ DOCKER / CI ===============
+###############################################
+
+docker-compose.override.yml
+.docker/
+docker/
+.dockerignore
+
+# Vagrant
+.vagrant/
+
+# PHPUnit
+phpunit.xml
+phpunit.xml.dist
+coverage/
+.clover
+.phpunit.result.cache
+
+# PHPCS / PHPStan / Psalm
+.php_cs.cache
+.php-cs-fixer.cache
+.phpstan/cache
+psalm-cache/
+
+###############################################
+# ================ CONFIG LOCALES =============
+###############################################
+
+config/local.php
+config/local/*.php
+config/dev.php
+config/test.php
+
+###############################################
+# ================ UPLOADS ====================
+###############################################
+
+# Uploads utilisateurs
+public/uploads/*
+!public/uploads/.htaccess
+
+uploads/
+uploads/*
+!uploads/.gitkeep
+
+###############################################
+# ================ BACKUPS ====================
+###############################################
+
+backup/
+backups/
+*.sql
+*.sql.gz
+*.tar
+*.tar.gz
+*.zip
+
+###############################################
+# ================ CMS (si utilisés) ==========
+###############################################
+
+# WordPress
+wp-content/cache/
+wp-content/uploads/
+wp-content/upgrade/
+wp-content/backups/
+wp-content/advanced-cache.php
+wp-content/object-cache.php
+wp-config.php
+wp-config-local.php
+
+# Drupal
+sites/*/files/
+sites/*/private/
+sites/*/settings.local.php
+
+# Joomla
+cache/
+administrator/cache/
+tmp/
+logs/
+configuration.php
+configuration.php-dist
+
+###############################################
+# ================ SPECIFIQUE PROJET ==========
+###############################################
+
+# Storage OmniverseCORE
+storage/logs/
+storage/cache/
+storage/sessions/
+
+# Fichiers sensibles
+.env
+.env.*
+
+# Fichiers système
+.DS_Store
+Thumbs.db
