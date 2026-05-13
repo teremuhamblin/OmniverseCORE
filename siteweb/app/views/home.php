@@ -1,14 +1,13 @@
-<?php
-$subtitle = $subtitle ?? 'Omniversal core framework';
-?>
-<section>
-    <h2><?= htmlspecialchars($title ?? 'OmniverseCORE') ?></h2>
-    <p><?= htmlspecialchars($subtitle) ?></p>
+<section class="hero">
+    <h1 class="glitch" data-text="<?= htmlspecialchars($message, ENT_QUOTES) ?>">
+        <?= htmlspecialchars($message, ENT_QUOTES) ?>
+    </h1>
+    <p class="subtitle">Framework cyber‑physique nouvelle génération</p>
 
-    <p>
-        OmniverseCORE est le noyau de ton écosystème : modules, packs, scripts et pipelines.
-        Ce site sert de hub : présentation, docs, liens GitHub, releases.
-    </p>
+    <div class="cta">
+        <a href="/docs" class="btn-primary" data-nav>Explorer la documentation</a>
+        <a href="#start" class="btn-secondary">Démarrer</a>
+    </div>
 
-    <a href="/docs">Accéder à la documentation</a>
+    <canvas id="particles"></canvas>
 </section>
