@@ -1,0 +1,133 @@
+🌌 1. TEMPLATE UNIVERSEL — README.md (NextGen OmniverseCORE)
+(À placer dans /docs/templates/README-template.md)
+
+`markdown
+
+🌌 OmniverseCORE — NOMDUPROJET
+> ✨ Description courte et impactante du projet
+
+!Status
+!Version
+!License
+!OmniverseCORE
+
+---
+
+📑 Sommaire
+- 🚀 Présentation
+- 🧩 Architecture
+- 🗂️ Structure
+- 🔌 API
+- 🎨 UI/UX
+- 🛠️ Installation
+- ⚙️ Utilisation
+- 🧪 Tests
+- 📚 Documentation
+- 🕒 Historique
+- 🌌 Footer
+
+---
+
+🚀 Présentation
+> ℹ️ Résumé du projet  
+Explique en quelques lignes ce que fait ton projet, sa vision, sa portée et son lien avec OmniverseCORE.
+
+---
+
+🧩 Architecture
+
+🔷 Architecture NextGen
+- ✦ 12 BLOCS NG  
+- ✦ CORE ENGINE NG  
+- ✦ SECURITY LAYER NG  
+- ✦ I/O LAYER NG  
+- ✦ DEVOPS NG  
+- ✦ UI/UX NG  
+
+`
+          ┌──────────────────────────────┐
+          │        OmniverseCORE         │
+          │         NextGen v4.0         │
+          └──────────────────────────────┘
+                       │
+     ┌─────────────────┼─────────────────┐
+     │                 │                 │
+ Core Engine     Security Layer      I/O Layer
+`
+
+---
+
+🗂️ Structure
+`
+/core
+/api/v3-ng
+/ui/components-ng
+/plugins
+/storage
+/devops
+/docs
+/public
+`
+
+---
+
+🔌 API
+> 🧬 API v3 NG  
+Endpoints, sécurité, versioning, exemples.
+
+---
+
+🎨 UI/UX
+- Neon + Glassmorphism  
+- Composants NG  
+- Thèmes dynamiques  
+
+---
+
+🛠️ Installation
+`bash
+git clone https://github.com/USER/REPO.git
+cd REPO
+composer install
+`
+
+---
+
+⚙️ Utilisation
+`php
+$engine = new CoreEngineNG();
+$engine->boot();
+`
+
+---
+
+🧪 Tests
+`bash
+php vendor/bin/phpunit
+`
+
+---
+
+📚 Documentation
+- /docs/architecture.md
+- /docs/structure.md
+- /docs/api.md
+- /docs/styleguide.md
+- /docs/overview.md
+
+---
+
+🕒 Historique
+| Version | Auteur | Date | Description |
+|---------|--------|-------|-------------|
+| v1.0 | Teremu | 2026‑05‑14 | Création |
+| v4.0 | Teremu | 2026‑05‑15 | Version NextGen |
+
+---
+
+🌌 Footer
+> OmniverseCORE NextGen — Framework cyber‑physique modulaire  
+> © 2026 — Projet dirigé par Teremu
+`
+
+---
