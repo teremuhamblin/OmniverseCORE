@@ -1,15 +1,14 @@
-🌌 1. TEMPLATE UNIVERSEL — README.md (NextGen OmniverseCORE)
-(À placer dans /docs/templates/README-template.md)
-
-`markdown
-
-🌌 OmniverseCORE — NOMDUPROJET
+###### README >> markdown 
+>(À placer dans /docs/templates/README-template.md)
+# 🌌 OmniverseCORE
+- NOMDUPROJET
 > ✨ Description courte et impactante du projet
-
+```text
 !Status
 !Version
 !License
 !OmniverseCORE
+```
 
 ---
 
@@ -44,7 +43,7 @@ Explique en quelques lignes ce que fait ton projet, sa vision, sa portée et son
 - ✦ DEVOPS NG  
 - ✦ UI/UX NG  
 
-`
+```schema
           ┌──────────────────────────────┐
           │        OmniverseCORE         │
           │         NextGen v4.0         │
@@ -53,7 +52,7 @@ Explique en quelques lignes ce que fait ton projet, sa vision, sa portée et son
      ┌─────────────────┼─────────────────┐
      │                 │                 │
  Core Engine     Security Layer      I/O Layer
-`
+```
 
 ---
 
