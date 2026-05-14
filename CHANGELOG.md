@@ -1,55 +1,80 @@
-# 📜 CHANGELOG
->OmniverseCORE
+# 📗 CHANGELOG — OmniverseCORE  
+Toutes les modifications majeures depuis la v1.0 jusqu’à la version NextGen v4.0.
 
 ---
 
-## 🟦 v3.0 — Hyper Expansion (2026-12-31)
+# 🧩 v1.x — Foundation Era
 
-### 🚀 Nouveautés
-- Ajout des blocs 11 → 15  
-- API externe v1  
-- Dashboard interne  
-- Documentation v3 complète  
-- Nouveau workflow CI/CD nouvelle génération  
+## ✅ v1.0 — Initial Release
+- Base du projet
+- Architecture MVC simple
+- Routing minimal
+- Structure des dossiers
+- Documentation initiale
 
-### 🧹 Améliorations
-- Architecture étendue  
-- Performance améliorée  
-- Modularité renforcée  
+## ✅ v1.1 — UI/UX Base
+- Ajout du layout global
+- Templates HTML
+- Normalisation CSS
+- Composants UI basiques
 
-### 🐛 Corrections
-- Ajustements sur les blocs 8 et 9  
-- Correction des chemins internes  
+## ✅ v1.2 — Assets & Perf
+- Optimisation CSS/JS
+- Ajout du dossier `/assets`
+- Compression des fichiers
+- Nettoyage du code
 
----
-
-## 🟩 v2.0 — Next-Gen Core (2026-06-30)
-
-### 🚀 Nouveautés
-- Bloc 9 finalisé (Security Layer)  
-- Bloc 8 amélioré (I/O Layer)  
-- Documentation technique v2  
-- Nouveau système de templates GitHub (Issues, PR, Discussions)  
-
-### 🧹 Améliorations
-- Cohérence interne renforcée  
-- Meilleure modularité  
-
-### 🐛 Corrections
-- Correction des incohérences dans les blocs 3, 7 et 8  
+## ✅ v1.5 — Stabilisation
+- Refonte légère du routing
+- Documentation améliorée
+- Préparation de la v2.0
 
 ---
 
-## 🟧 v1.0 — Foundation (2026-03-31)
+# 🧩 v2.x — Structural Expansion
 
-### 🚀 Nouveautés
-- Architecture initiale  
-- Blocs 1 → 3  
-- Documentation minimale  
-- Mise en place du workflow GitHub  
+## ✅ v2.0 — Modularisation
+- Séparation des modules internes
+- Ajout du dossier `/plugins`
+- API v1
+- Refonte du Core Engine
 
-### 🧹 Améliorations
-- Structure interne clarifiée  
+## ✅ v2.5 — DevOps & CI
+- Ajout GitHub Actions
+- Tests unitaires initiaux
+- Linting automatique
 
-### 🐛 Corrections
-- Ajustements mineurs sur les modules initiaux
+## ✅ v2.9 — Pré‑NextGen
+- Audit complet du code
+- Documentation restructurée
+- Préparation v3.0
+
+---
+
+# 🧩 v3.x — Pre‑NextGen Era
+
+## ✅ v3.0 — Global Upgrade
+- Nouveau Core Engine
+- Sécurité renforcée
+- API v2
+- Nouveau design system
+- Préparation SPA
+
+## ✅ v3.5 — Omniverse Ready
+- Loader OmniverseCORE
+- Layout NextGen
+- Stabilisation blocs 1 → 12
+- Préparation v4.0
+
+---
+
+# 🧬 v4.0 — NextGen Era
+
+## 🚀 v4.0-nextgen — Global Upgrade
+- Nouveau Core Engine NextGen
+- Refonte du Security Layer (Bloc 9)
+- Optimisation du I/O Layer (Bloc 8)
+- CI/CD NextGen
+- Harmonisation globale
+- Documentation restructurée
+- Préparation des versions Quantum (v5 → v8)
