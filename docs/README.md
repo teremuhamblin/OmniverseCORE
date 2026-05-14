@@ -4,12 +4,6 @@
 # 🌌 OmniverseCORE
 >Documentation Officielle (v4.0 NextGen)
 - ✨ Centre de documentation du framework cyber‑physique OmniverseCORE
-```text
-!Docs
-!Version
-!Architecture
-!Status
-```
 
 ---
 
