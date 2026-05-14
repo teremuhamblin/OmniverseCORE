@@ -11,7 +11,8 @@
 
 ---
 
-📑 Sommaire
+### 📑 Sommaire
+```md
 - 1. Introduction
 - 2. Objectifs
 - 3. Contenu principal
@@ -21,24 +22,24 @@
 - 7. Notes & Références
 - 8. Historique
 - 9. Footer
+```
 
 ---
 
-🧩 1. Introduction
+### 🧩 1. Introduction
 > ℹ️ Résumé rapide du document  
 > Explique en quelques lignes le but, le contexte et l’importance du fichier.
 
 ---
 
-🎯 2. Objectifs
+### 🎯 2. Objectifs
 - ✦ Objectif 1  
 - ✦ Objectif 2  
 - ✦ Objectif 3  
 
 ---
 
-🔷 3. Contenu principal
-
+### 🔷 3. Contenu principal
 🧬 Section A
 Texte explicatif clair et concis.
 
@@ -52,10 +53,10 @@ Texte explicatif clair et concis.
 
 ---
 
-🏛️ 4. Architecture / Structure (optionnel)
+### 🏛️ 4. Architecture / Structure (optionnel)
 
 🔹 Diagramme conceptuel
-`
+```schema
           ┌──────────────────────────────┐
           │        OmniverseCORE         │
           │         NextGen v4.0         │
@@ -64,7 +65,7 @@ Texte explicatif clair et concis.
      ┌─────────────────┼─────────────────┐
      │                 │                 │
  Core Engine     Security Layer      I/O Layer
-`
+```
 
 🔹 Table structurée
 | Module | Description | Statut |
@@ -78,22 +79,22 @@ Texte explicatif clair et concis.
 🧪 5. Exemples & Code
 
 🔧 Exemple simple
-`php
+```php
 echo "OmniverseCORE NextGen";
-`
+```
 
 🔧 Exemple avancé
-`php
+```php
 $engine = new CoreEngineNG();
 $engine->boot();
-`
+```
 
 ---
 
 🧬 6. Diagrammes
 
 UML (ASCII)
-`
+```schema
 +----------------------+
 |      Controller      |
 +----------+-----------+
@@ -102,7 +103,7 @@ UML (ASCII)
 +----------------------+
 |      Middleware      |
 +----------------------+
-`
+```
 
 ---
 
@@ -125,6 +126,5 @@ UML (ASCII)
 > 🌌 OmniverseCORE NextGen — Documentation officielle  
 > © 2026 — Projet dirigé par The MadDoG.tmdg 
 > Architecture cyber‑physique, modulaire, scalable, Quantum‑Ready  
-`
 
 ---
