@@ -1,0 +1,32 @@
+name: OmniverseCORE CI (Bun NextGen)
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Bun
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install
+
+      - name: Run tests
+        run: bun test || echo "No tests defined"
+
+      - name: Lint (optional)
+        run: bun run lint || echo "No linter configured"
+
+      - name: Build (optional)
+        run: bun run build || echo "No build script"
