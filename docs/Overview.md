@@ -1,39 +1,80 @@
-# Security & Integrity Layer — Overview
-
-Le Bloc 9 fournit la couche de sécurité d’OmniverseCORE.  
-Il garantit la protection, l’intégrité et la traçabilité du système.
-
----
-
-## 🎯 Objectifs techniques
-
-- Définir les rôles et permissions internes  
-- Protéger les modules sensibles  
-- Vérifier l’intégrité des états  
-- Détecter les altérations ou corruptions  
-- Journaliser les actions critiques  
+###### Overview.md >> markdown 
+# 📙🌌 OmniverseCORE
+>(v1.0 → v4.0 NextGen)
+🎯 Objectif
+Fournir une vue d’ensemble complète d’OmniverseCORE, son architecture, sa structure, ses blocs, son API, son design system et son évolution globale.
 
 ---
 
-## 📂 Sous-systèmes
-
-- **permissions/** — rôles, accès, vérification  
-- **integrity/** — checksums, vérification, anti-altération  
-- **audit/** — logs, règles d’audit, historique  
+### 🧩 1. Qu’est‑ce qu’OmniverseCORE ?
+Un noyau modulaire, scalable, cyber‑physique, conçu pour alimenter des applications modernes, rapides, sécurisées et extensibles.
 
 ---
 
-## 🔗 Dépendances internes
-
-- Core Logic  
-- Omniversal Engine  
-- I/O Layer  
+### 🧩 2. Évolution globale
+>v1.x — Foundation
+- MVC simple  
+- Routing basique  
+- UI minimale  
+>v2.x — Structural Expansion
+- Modularisation  
+- Plugins  
+- API v1  
+>v3.x — Pre‑NextGen
+- 12 blocs  
+- API v2  
+- Design system avancé  
+>v4.x — NextGen
+- Core Engine NG  
+- API v3 NG  
+- Security NG  
+- I/O NG  
+- DevOps NG  
+- UI/UX NG  
 
 ---
 
-## 📌 Statut
+### 🧩 3. Architecture NextGen
+- 12 blocs NG  
+- Core Engine NG  
+- Security Layer NG  
+- I/O Layer NG  
+- DevOps NG  
+- UI/UX NG
 
-- Architecture : ✔️  
-- Implémentation initiale : ✔️  
-- Tests : ⏳  
-- Intégration finale : ⏳
+---
+
+### 🧩 4. Structure NextGen
+```text
+/core
+/api/v3-ng
+/ui/components-ng
+/plugins
+/storage
+/devops
+/docs
+/public
+```
+
+---
+
+### 🧩 5. API NextGen
+- Versioning avancé  
+- Sécurité renforcée  
+- Réponses uniformisées  
+- Endpoints modulaires  
+
+---
+
+### 🧩 6. Design System NextGen
+- Neon + Glassmorphism  
+- Composants NG  
+- Thèmes dynamiques  
+
+---
+
+### 🧩 7. Conclusion
+OmniverseCORE NextGen est prêt pour les versions Quantum (v5 → v8) et Omniversal (v9+).
+`
+
+---
