@@ -1,0 +1,19 @@
+version: 2
+updates:
+  # Dépendances JavaScript (Bun compatible)
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    allow:
+      - dependency-type: "direct"
+      - dependency-type: "production"
+    ignore:
+      - dependency-type: "development"
+    open-pull-requests-limit: 10
+
+  # Actions GitHub
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
