@@ -1,91 +1,114 @@
-# 🚀 OmniverseCORE — ROADMAP (v1.0 → v4.0 NextGen)
-
-## 📌 Vision globale
-Construire un noyau modulaire, scalable, cyber‑physique et évolutif, capable de supporter les versions Quantum (v5 → v8) et Omniversal (v9+).
+###### ROADMAP.md >> markdown 
+# 🗺️ OmniverseCORE
+>ROADMAP OFFICIELLE
+- Vision globale v1.0 → v6.0  
+- Style ingénierie avancée
+- Cases cochées
+- Quantum ERA
 
 ---
 
-# 🧩 v1.x — Foundation Era
+# 🧱 Phase 1 — FOUNDATION (v1.0)
+### Objectifs
+Créer la base du noyau.
 
-## ✅ v1.0 — Core Foundation
-- [x] Mise en place du noyau PHP minimal
-- [x] Architecture MVC simplifiée
-- [x] Système de routing basique
-- [x] Structure des dossiers initiale
-- [x] Première documentation
+### Tâches
+- [x] Core Kernel v1
+- [x] Event System v1
+- [x] Config v1
+- [x] Plugins basiques
+- [x] Documentation initiale
 
-## ✅ v1.1 — UI/UX Base
-- [x] Ajout du layout global
-- [x] Système de templates
-- [x] Premiers composants UI
-- [x] Normalisation CSS
+---
 
-## ✅ v1.2 — Assets & Performance
-- [x] Optimisation des assets
-- [x] Ajout du dossier `/assets`
-- [x] Compression CSS/JS
+# 🧩 Phase 2 — MODULE ARCHITECTURE (v2.0)
+### Objectifs
+Introduire une architecture modulaire.
+
+### Tâches
+- [x] Module System v1
+- [x] Adapters v1
+- [x] Logging v1
+- [x] CLI v1
+- [x] Refonte partielle du Core
+
+---
+
+# ⚙️ Phase 3 — ENGINEERING REWRITE (v3.0)
+### Objectifs
+Réécrire le cœur pour une base ingénierie solide.
+
+### Tâches
+- [x] Core Kernel v2
+- [x] EventBus v1.5
+- [x] Config v2
+- [x] DI/IoC v1
+- [x] Documentation technique complète
+
+---
+
+# 🧭 Phase 4 — SYSTEM STABILIZATION (v4.0 → v4.5)
+### Objectifs
+Stabiliser et préparer la montée en puissance.
+
+### Tâches
+- [x] Logging v2
+- [x] DI/IoC v2
+- [x] Lifecycle v2
 - [x] Nettoyage du code
-
-## ✅ v1.5 — Stabilisation
-- [x] Refonte légère du routing
-- [x] Documentation améliorée
-- [x] Préparation de la v2.0
+- [x] Tests d’intégration
+- [x] Préparation à la modularisation avancée
 
 ---
 
-# 🧩 v2.x — Structural Expansion
+# 🌌 Phase 5 — MULTIVERSE READY (v5.0)
+### Objectifs
+Séparer les couches et préparer le multiverse.
 
-## ✅ v2.0 — Modularisation
-- [x] Séparation des modules internes
-- [x] Ajout du dossier `/plugins`
-- [x] API v1 (basique)
-- [x] Refonte du Core Engine
-
-## ✅ v2.5 — DevOps & CI
-- [x] Ajout du workflow GitHub Actions
-- [x] Tests unitaires initiaux
-- [x] Linting + formatage automatique
-
-## ✅ v2.9 — Pré‑NextGen
-- [x] Audit complet du code
-- [x] Préparation de la v3.0
-- [x] Documentation restructurée
+### Tâches
+- [x] Séparation Core / Universes / Adapters
+- [x] Module Loader (hot‑reload)
+- [x] Config v3
+- [x] Adapters universels
+- [x] Multiverse Bridge
+- [x] Documentation technique v2
 
 ---
 
-# 🧩 v3.x — Pre‑NextGen Era
+# ⚡ Phase 6 — TIMELINE ENGINE (v5.5)
+### Objectifs
+Introduire la gestion d’états, scénarios et modes.
 
-## ✅ v3.0 — Global Upgrade
-- [x] Refonte du Core Engine
-- [x] Sécurité renforcée
-- [x] API v2
-- [x] Nouveau design system
-- [x] Préparation du mode SPA
-
-## ✅ v3.5 — Omniverse Ready
-- [x] Ajout du loader OmniverseCORE
-- [x] Layout NextGen
-- [x] Blocs 1 → 12 stabilisés
-- [x] Préparation de la v4.0
+### Tâches
+- [x] Timeline Engine
+- [x] Profiles Engine
+- [x] State Virtualizer
+- [x] EventBus v2
+- [x] CLI v2
+- [x] Stabilisation interne
 
 ---
 
-# 🧬 v4.0 — NextGen Era (Actuel)
+# 🚀 Phase 7 — QUANTUM ERA (v6.0)
+### Objectifs
+Déployer l’ère Quantum : multi‑univers, timelines, orchestration avancée.
 
-## 🚀 v4.0-nextgen — Global Upgrade
-- [x] Nouveau Core Engine NextGen
-- [x] Refonte du Security Layer (Bloc 9)
-- [x] Optimisation du I/O Layer (Bloc 8)
-- [x] CI/CD NextGen
-- [x] Harmonisation des blocs 1 → 12
-- [x] Documentation globale restructurée
-- [x] Préparation des versions Quantum (v5 → v8)
+### Tâches
+- [x] Quantum Kernel
+- [x] Quantum Timeline Engine
+- [x] Dynamic Universe Loader
+- [x] OmniAPI v3
+- [x] Q‑Modules
+- [x] Documentation complète
+- [x] Optimisations globales
 
 ---
 
-# 🔮 Prochaines étapes (v5 → v8 Quantum Era)
-- [ ] Quantum Engine v1
-- [ ] API v3 Omniversal
-- [ ] Dashboard cyber‑physique
-- [ ] Système d’extensions avancé
-- [ ] Mode multi‑nœuds
+# 🔮 Vision post‑6.0 — QUANTUM+
+### Objectifs futurs
+- [ ] Quantum Sync (multi‑réalités synchronisées)
+- [ ] Simulation distribuée
+- [ ] OmniverseCORE Cloud
+- [ ] Q‑AI Modules (analyse prédictive d’univers)
+
+---
